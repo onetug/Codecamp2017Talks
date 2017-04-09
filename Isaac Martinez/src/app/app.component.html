@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="mt-5" *ngFor="let todo of todos; let i=index">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="mb-0"> <a class="primary" href="javascript:void(0)" (click)="todo.show = !todo.show">{{todo.title}}</a> </h5>
+        <button type="button" (click)="delete(todo, i)" class="btn btn-danger">Delete</button>
+      </div>
+      <div class="collapse" [ngClass]="{'show': todo.show}">
+        <div class="card-block">{{todo.description}}</div>
+      </div>
+    </div>
+  </div>
+  <button type="button" (click)="addClicked=true" class="btn btn-primary btn-block mt-5">Add Todo</button>
+  <div *ngIf="addClicked">
+    <div class="form border-1 mt-5">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" [(ngModel)]="newTodo.title" id="title" placeholder="Enter Title">
+      </div>
+      <div class="form-group">
+        <label for="Description">Description</label>
+        <input type="text" class="form-control" id="Description" [(ngModel)]="newTodo.description" placeholder="Enter Description">
+      </div>
+      <button type="button" (click)="saveChanges()" class="btn btn-danger btn-block">Save Todo</button>
+    </div>
+  </div>
+</div>
