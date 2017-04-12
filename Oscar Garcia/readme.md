@@ -1,7 +1,8 @@
 <h1>Securing Web Apps with Azure AD</h1>
 <h2>NodeJS, AngularJS, Git Deployment</h2>
+<p>
 This is the presentation for the Securing Web Apps with Azure AD.  In this presentation, we talked about the following areas:
-
+</p>
 <ol>
 <li>
 We take a Web application with an AngularJS SPA as client and NodeJS server with no security context, and we deploy it to Azure using a local GIT repository.
@@ -25,8 +26,7 @@ Presentation</h2>
 <a href="https://github.com/ozkary/nodejs-azure-ad">
 https://github.com/ozkary/nodejs-azure-ad</a>
 </p>
-
-<div style="box-sizing: border-box; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 19.6px;">
-<iframe allowfullscreen="true" frameborder="0" height="500" mozallowfullscreen="true" 
-src="https://docs.google.com/presentation/d/1hNHa7sQ9J4Jg_pvdFypHlWngjzVvTSEfA85BIAx3KHs/embed?start=false&amp;loop=false&amp;delayms=5000" 
-webkitallowfullscreen="true" width="650"></iframe>
+<h3>Presentation Deck:</h3>
+<a href="https://docs.google.com/presentation/d/1hNHa7sQ9J4Jg_pvdFypHlWngjzVvTSEfA85BIAx3KHs">
+<img src="ozkary-securing-web-apps.png" width="550px"></img>
+</a>
