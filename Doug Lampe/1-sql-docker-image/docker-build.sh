@@ -1,0 +1,1 @@
+docker build -t douglampe-cc17/mssql .

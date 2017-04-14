@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}\\2-console-app\\src\\CodeCamp2017.Cli\\bin\\Debug\\netcoreapp1.1\\CodeCamp2017.Cli.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}\\2-console-app\\src\\CodeCamp2017.Cli",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}

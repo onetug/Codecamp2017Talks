@@ -1,0 +1,16 @@
+{
+    "version": "0.1.0",
+    "command": "dotnet",
+    "isShellCommand": true,
+    "args": [],
+    "tasks": [
+        {
+            "taskName": "build",
+            "args": [
+                "${workspaceRoot}\\2-console-app\\src\\CodeCamp2017.Cli\\CodeCamp2017.Cli.csproj"
+            ],
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

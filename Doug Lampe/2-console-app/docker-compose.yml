@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+
+  mssql:
+    image: douglampe-cc17/mssql
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=My$$trongPa$$$$word
+    volumes:
+      - c:/Temp/CodeCampData:/var/opt/mssql
+
+  console:
+    image: douglampe-cc17/console
+    environment:
+      - SA_PASSWORD=My$$trongPa$$$$word
+      - SQL_SERVER=mssql
