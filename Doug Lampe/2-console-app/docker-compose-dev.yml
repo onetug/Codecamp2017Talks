@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+
+  mssql:
+    image: douglampe-cc17/mssql
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=My$$trongPa$$$$word
+    volumes:
+      - c:/Temp/CodeCampData:/var/opt/mssql
